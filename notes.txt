@@ -1,0 +1,70 @@
+# pseudocode
+# Level 1: Find all available seats
+function find_available_seats(theater_seats):
+    available_seats = []  # Tracks available seats
+
+    for each seat in theater_seats:
+        if seat is available:
+            add seat to available_seats list
+
+    return available_seats
+
+
+# Level 2: Find single pairs of empty seats
+function find_single_pair(theater_seats):
+    pairs_available = []  # Tracks available pairs of seats
+
+    for each pair of adjacent seats:
+        if both seats are available:
+            add pair to pairs_available list
+
+    return pairs_available
+
+
+# Level 3: Find all pairs of empty seats
+function find_pairs_available(theater_seats):
+    pairs_available = []  # Tracks all available pairs
+
+    for each pair of adjacent seats:
+        if both seats are available:
+            add pair to pairs_available list
+
+    return pairs_available
+
+
+# Level 4: Find all possible combinations of seats with a specified number of seats together
+function find_combinations(theater_seats, num_seats):
+    seat_combinations = []  # Tracks all possible combinations
+
+    for each group of consecutive available seats:
+        if group has num_seats seats:
+            add group to seat_combinations list
+
+    return seat_combinations
+
+
+# Test Level 1
+test1 = find_available_seats(t.theater_seats2)
+print(test1)
+
+# Test Level 2
+test2 = find_single_pair(t.theater_seats2)
+print(test2)
+
+# Test Level 3
+test3 = find_pairs_available(t.theater_seats2)
+print(test3)
+
+# Test Level 4
+test4 = find_combinations(t.theater_seats2, 3)
+print(test4)
+
+
+# Lists
+# https://www.w3schools.com/python/python_lists.asp
+
+# Conditions and If Statements
+# https://www.w3schools.com/python/python_conditions.asp
+
+# Enumerate
+# https://www.geeksforgeeks.org/enumerate-in-python/
